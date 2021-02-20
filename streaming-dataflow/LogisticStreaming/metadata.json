@@ -1,0 +1,21 @@
+{
+  "name": "Streaming Beam DF Job",
+  "description": "An Apache Beam streaming pipeline that stream logistic data from GCS ,uses PTransform to transform the file records, and writes the results to a BigQuery",
+  "parameters": [
+    {
+      "name": "tableName",
+      "label": "BQ table name",
+      "helpText": "Write Streaming data to BQ table name"
+    },
+    {
+      "name": "filePath",
+      "label": "GCS file path",
+      "helpText": "Stream data from GCS"
+    },
+{
+      "name": "errorBucket",
+      "label": "Invalid record or BQ failed insert write to GCS",
+      "helpText": " write invalid record to GCS"
+    }
+  ]
+}
