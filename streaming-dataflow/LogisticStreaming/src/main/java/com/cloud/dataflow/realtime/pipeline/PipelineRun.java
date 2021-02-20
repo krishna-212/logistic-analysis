@@ -1,4 +1,4 @@
-package com.cloud.dataflow.realtime;
+package com.cloud.dataflow.realtime.pipeline;
 
 import org.apache.beam.sdk.Pipeline;
 import org.apache.beam.sdk.PipelineResult;
@@ -21,8 +21,8 @@ import org.apache.beam.sdk.values.TupleTagList;
 import org.joda.time.Duration;
 
 import com.cloud.dataflow.realtime.options.RealtimeTableOptions;
-import com.cloud.dataflow.transformations.ErrorRecordsExtractor;
-import com.cloud.dataflow.transformations.InputDataProcessing;
+import com.cloud.dataflow.realtime.transformations.ErrorRecordsExtractor;
+import com.cloud.dataflow.realtime.transformations.InputDataProcessing;
 import com.google.api.services.bigquery.model.TableRow;
 
 public class PipelineRun {

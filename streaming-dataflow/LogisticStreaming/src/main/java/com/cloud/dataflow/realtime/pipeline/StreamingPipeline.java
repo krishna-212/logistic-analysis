@@ -1,6 +1,5 @@
-package com.cloud.dataflow.realtime;
+package com.cloud.dataflow.realtime.pipeline;
 
-import org.apache.beam.runners.dataflow.DataflowRunner;
 import org.apache.beam.sdk.options.PipelineOptionsFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,13 +24,6 @@ public class StreamingPipeline {
 		RealtimeTableOptions pipelineOptions = getPipelineOptions(args);
 
 		pipelineOptions.setStreaming(true);
-		pipelineOptions.setEnableStreamingEngine(true);
-		pipelineOptions.setTempLocation("gs://cc-data-sandbox-dataflow-test/dunzo_staging/");
-		pipelineOptions.setRegion("asia-south1");
-		pipelineOptions.setWorkerZone("asia-south1-a");
-		pipelineOptions.setRunner(DataflowRunner.class);
-		pipelineOptions.setProject("cc-data-sandbox");
-		pipelineOptions.setJobName("logistic-analytics" + System.currentTimeMillis());
 		pipelineOptions.setWorkerMachineType("n1-standard-4");
 		pipelineOptions.setNumberOfWorkerHarnessThreads(32);
 

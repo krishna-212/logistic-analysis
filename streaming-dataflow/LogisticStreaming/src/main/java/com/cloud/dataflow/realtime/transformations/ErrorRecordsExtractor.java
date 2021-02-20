@@ -1,4 +1,4 @@
-package com.cloud.dataflow.transformations;
+package com.cloud.dataflow.realtime.transformations;
 
 import org.apache.beam.sdk.io.gcp.bigquery.BigQueryInsertError;
 import org.apache.beam.sdk.transforms.DoFn;

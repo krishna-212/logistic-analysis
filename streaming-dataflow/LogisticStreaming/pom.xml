@@ -62,7 +62,7 @@
 									implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>com.cloud.dataflow.realtime.StreamingPipeline</mainClass>
+									<mainClass>com.cloud.dataflow.realtime.pipeline.StreamingPipeline</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
