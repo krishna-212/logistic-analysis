@@ -26,7 +26,7 @@ Follow the
 		
 
 	2.Create template 
-		mvn -Pdataflow-runner compile exec:java \
+	mvn -Pdataflow-runner compile exec:java \
       -Dexec.mainClass= \
       -Dexec.cleanupDaemonThreads=false \
       -Dexec.args="--project= \
@@ -67,5 +67,5 @@ Follow the
 
 
 ##	NOTE
-Just need to run the Dataflow Streaming Job, no need to setup anything else. As soon as you insert new files,DF automatically picks it up. In every 5 mins, Dataflow checks for new files and dump that record to BigQuery.
+Just need to run the Dataflow Streaming Job, no need to setup anything else. As soon as you insert new files,DF automatically picks it up. In every 5 mins, Dataflow checks for new files and stream that record to BigQuery.
 	
