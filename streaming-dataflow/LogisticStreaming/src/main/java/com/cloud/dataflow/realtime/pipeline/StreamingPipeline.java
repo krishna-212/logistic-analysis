@@ -23,7 +23,6 @@ public class StreamingPipeline {
 
 		RealtimeTableOptions pipelineOptions = getPipelineOptions(args);
 
-		pipelineOptions.setStreaming(true);
 		pipelineOptions.setWorkerMachineType("n1-standard-4");
 		pipelineOptions.setNumberOfWorkerHarnessThreads(32);
 
