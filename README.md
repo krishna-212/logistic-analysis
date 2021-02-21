@@ -26,7 +26,7 @@ Follow the
 		
 
 	2.Create template 
-		mvn -Pdataflow-runner compile exec:java \
+	mvn -Pdataflow-runner compile exec:java \
       -Dexec.mainClass= \
       -Dexec.cleanupDaemonThreads=false \
       -Dexec.args="--project= \
